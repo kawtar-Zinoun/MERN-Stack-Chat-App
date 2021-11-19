@@ -12,7 +12,7 @@ import fileUploader from "./controllers/fileUploader";
 const io = socketIO(process.env.SOCKET_PORT);
 const app = express();
 
-app.use((req, res, next) => {
+/* app.use((req, res, next) => {
     //allow access from every, elminate CORS
     res.setHeader('Access-Control-Allow-Origin','*');
     res.removeHeader('x-powered-by');
@@ -84,4 +84,4 @@ io.on("newChatMessage",(data) => {
 });
 io.on("disconnect",()=>{
   console.log("connection disconnected");
-});
+}); */
