@@ -7,7 +7,7 @@ const mongoConnect = require('./Config/Mongo');
 
 
 var corsOptions = {
-    origin: "http://localhost:8081"
+    origin: "http://localhost:3000"
   };
 app.use(cors(corsOptions));
 
@@ -30,7 +30,7 @@ const initApp = async () =>{
     try{
       await mongoConnect();
      // set port, listen for requests
-      const PORT = process.env.HTTP_PORT || 8080;
+      const PORT = process.env.HTTP_PORT || 8080 ;
       app.listen(PORT, () => {
       console.log(`Server is running on port ${PORT}.`);
 });

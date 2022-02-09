@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400&display=swap'); */
 
 :root {
     --mainColor : #7C83FD ;
@@ -9,7 +9,7 @@
 }
 body {
     background-color: var(--mainColor);
-    font-family: 'Roboto', sans-serif ;
+    font-family: 'Roboto', sans-serif ; 
 }
 html,body {
     height: 100%;
@@ -32,7 +32,7 @@ html,body {
     width: 50%;
 }
 
-.login {
+.card {
     width: 50%;
     height: 80vh;
     background-color: var(--grey);
@@ -42,16 +42,17 @@ html,body {
    
 }
 
-.login p {
+.card p {
     font-size: 17px;
-    margin-top: 35px;
+    margin-top: 30px;
     align-self: center;
     color: var(--lightBlack);
 }
 
-.login p span {
+.card p span {
    color: var(--mainColor);
    font-weight: bold;
+   text-decoration: none;
 }
 
 .title {
@@ -114,7 +115,7 @@ form {
 
 .submitButton{
     margin-top: 25%;
-    width:125%;
+    width:90%;
     height: 45px;
     background-color: var(--mainColor);
     border-radius: 47px;
@@ -132,6 +133,13 @@ form {
    align-self: center;
     border-bottom: 2px solid var(--darkGrey);
  
+}
+
+.error {
+    color: #FF2626;
+    font-size: 13px;
+    padding-top: 10px;
+    font-weight: medium;
 }
 
 
